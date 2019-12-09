@@ -20,14 +20,20 @@ Selenium框架
 ## 运行说明
 ### 项目配置
 #### 1.爬虫
-使用pip安装MongoDB、Scrapy、Selenium
+使用pip安装MongoDB、Scrapy、Selenium   
+   
+爬虫文件夹下每个文件夹是对不同网站的爬虫，不同爬虫文件夹下有针对不同爬虫的说明。文本类型网页是将爬取到的内容存储到csv文件中，音视频类型网页是直接将音视频文件下载到本地。
 #### 2.文本数据提取
 项目中调用了百度AI平台的接口，需要先下载百度AI平台的SDK文件到本地，并创建百度AI平台应用，具体参照以下链接说明。    
 <http://ai.baidu.com/docs#/ImageClassify-Python-SDK/top>    
 <https://blog.csdn.net/shuihupo/article/details/79866439>   
-完成SDK安装后将代码中的AppID、APIKey、SecretKey修改为自己的。
+完成SDK安装后将代码中的AppID、APIKey、SecretKey修改为自己的。   
+   
+文本数据提取三个子目录包含三种不同功能，文件目录下有对应的说明。
 #### 3.文本分析
-使用pip安装Jieba、scikit learn
+使用pip安装Jieba、scikit learn   
+   
+   文本分析目录下的三个子目录中也包含不同操作对应的说明。
 ### 运行注意事项
 本项目通过sh脚本来进行管理，在运行时只需要选取所要运行的项目名称即可。在文件目录下打开终端（命令行）运行命令运行命令： 'sh run.sh XX' （XX为需要运行的项目名称，具体用记事本打开run.sh文件可以看到对应的项目）
 每一个子项目下有对应的readme.txt作进一步说明。
